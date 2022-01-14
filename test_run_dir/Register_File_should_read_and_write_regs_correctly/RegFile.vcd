@@ -1,0 +1,148 @@
+$date
+2021-04-30T09:45+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module RegFile $end
+ $var wire 16 ! io_debugR4 $end
+ $var wire 16 " _GEN_22 $end
+ $var wire 3 # io_sr2Sel $end
+ $var wire 16 $ regs_4 $end
+ $var wire 16 % _GEN_2 $end
+ $var wire 16 & io_debugR7 $end
+ $var wire 16 ' _GEN_10 $end
+ $var wire 16 ( regs_7 $end
+ $var wire 16 ) _GEN_31 $end
+ $var wire 16 * _GEN_25 $end
+ $var wire 16 + _GEN_19 $end
+ $var wire 16 , _GEN_5 $end
+ $var wire 16 - regs_1 $end
+ $var wire 16 . _GEN_13 $end
+ $var wire 16 / io_drIn $end
+ $var wire 16 0 io_debugR6 $end
+ $var wire 16 1 _GEN_30 $end
+ $var wire 16 2 _GEN_24 $end
+ $var wire 16 3 _GEN_27 $end
+ $var wire 16 4 io_debugR0 $end
+ $var wire 16 5 _GEN_12 $end
+ $var wire 16 6 io_debugR3 $end
+ $var wire 16 7 _GEN_7 $end
+ $var wire 16 8 regs_3 $end
+ $var wire 16 9 _GEN_21 $end
+ $var wire 16 : io_sr1Out $end
+ $var wire 16 ; _GEN_18 $end
+ $var wire 16 < regs_6 $end
+ $var wire 16 = _GEN_1 $end
+ $var wire 16 > regs_0 $end
+ $var wire 3 ? io_sr1Sel $end
+ $var wire 16 @ _GEN_4 $end
+ $var wire 1 A clock $end
+ $var wire 3 B io_drSel $end
+ $var wire 16 C io_debugR5 $end
+ $var wire 16 D _GEN_17 $end
+ $var wire 16 E _GEN_26 $end
+ $var wire 16 F _GEN_11 $end
+ $var wire 16 G io_debugR2 $end
+ $var wire 16 H _GEN_20 $end
+ $var wire 16 I _GEN_29 $end
+ $var wire 16 J regs_2 $end
+ $var wire 16 K _GEN_6 $end
+ $var wire 16 L _GEN_14 $end
+ $var wire 16 M regs_5 $end
+ $var wire 16 N _GEN_0 $end
+ $var wire 16 O _GEN_9 $end
+ $var wire 1 P io_wEn $end
+ $var wire 1 Q reset $end
+ $var wire 16 R _GEN_3 $end
+ $var wire 16 S _GEN_28 $end
+ $var wire 16 T io_sr2Out $end
+ $var wire 16 U io_debugR1 $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+b0000000000000000 H
+b0000000000000000 +
+b0000000000000000 I
+b0000000000000000 ,
+b0000000000000000 -
+b0000000000000000 C
+b0000000000000000 .
+b0000000000000000 &
+b000 B
+b0000000000000000 D
+b0000000000000000 '
+b0000000000000000 E
+b0000000000000000 =
+b0000000000000000 (
+b0000000000000000 >
+b0000000000000000 )
+b0000000000000000 !
+b0000000000000000 T
+b0000000000000000 "
+b0000000000000000 U
+b0000000000000000 @
+0P
+b0000000000000000 8
+0Q
+b000 ?
+b0000000000000000 9
+b0000000000000000 $
+b0000000000000000 O
+b0000000000000000 :
+b0000000000000000 %
+b000 #
+b0000000000000000 ;
+b0000000000000000 3
+b0000000000000000 <
+b0000000000000000 4
+b0000000000000000 R
+b0000000000000000 J
+b0000000000000000 5
+b0000000000000000 S
+b0000000000000000 K
+b0000000000000000 6
+b0000000000000000 L
+b0000000000000000 7
+b0000000000000000 /
+b0000000000000000 M
+b0000000000000000 0
+b0000000000000000 N
+b0000000000000000 F
+b0000000000000000 1
+0A
+b0000000000000000 G
+b0000000000000000 2
+b0000000000000000 *
+$end
+#0
+1Q
+#1
+1A
+#6
+b111 B
+0Q
+b1111111111111111 7
+0A
+1P
+b1111111111111111 /
+b1111111111111111 )
+#11
+b1111111111111111 &
+b1111111111111111 (
+1A
+#16
+b000 B
+b000 ?
+b0000000000000000 :
+0A
+0P
+b0000000000000000 /
+#21
+1A
+#26
+0A

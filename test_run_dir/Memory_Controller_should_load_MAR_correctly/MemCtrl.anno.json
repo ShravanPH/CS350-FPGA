@@ -1,0 +1,36 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/Memory_Controller_should_load_MAR_correctly/MemCtrl.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MemCtrl|MemCtrl>io_R",
+    "sources":[
+      "~MemCtrl|MemCtrl>io_MIOEN",
+      "~MemCtrl|MemCtrl>io_RDWR"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MemCtrl|MemCtrl>io_wEn",
+    "sources":[
+      "~MemCtrl|MemCtrl>io_RDWR"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MemCtrl|MemCtrl>io_en",
+    "sources":[
+      "~MemCtrl|MemCtrl>io_MIOEN"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/Memory_Controller_should_load_MAR_correctly"
+  }
+]

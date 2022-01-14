@@ -1,0 +1,123 @@
+$date
+2021-04-29T07:47+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module MicroSequencer $end
+ $var wire 1 ! and2 $end
+ $var wire 1 " _and1_T_5 $end
+ $var wire 1 # _and6_T_6 $end
+ $var wire 1 $ and5 $end
+ $var wire 1 % _and4_T_1 $end
+ $var wire 4 & io_ctrlAddr_lo $end
+ $var wire 3 ' io_cFeed_COND $end
+ $var wire 1 ( _and3_T_6 $end
+ $var wire 6 ) io_ctrlAddr $end
+ $var wire 1 * _and1_T $end
+ $var wire 1 + _and2_T_2 $end
+ $var wire 6 , io_cFeed_J $end
+ $var wire 1 - _and1_T_1 $end
+ $var wire 1 . _and2_T_5 $end
+ $var wire 1 / _and6_T_5 $end
+ $var wire 1 0 and1 $end
+ $var wire 1 1 _and1_T_4 $end
+ $var wire 1 2 _and5_T_4 $end
+ $var wire 1 3 and4 $end
+ $var wire 1 4 _and4_T_3 $end
+ $var wire 1 5 io_BEN $end
+ $var wire 1 6 clock $end
+ $var wire 1 7 _and4_T_6 $end
+ $var wire 1 8 and3 $end
+ $var wire 6 9 _io_ctrlAddr_T $end
+ $var wire 6 : x $end
+ $var wire 1 ; _and5_T_6 $end
+ $var wire 1 < and6 $end
+ $var wire 1 = io_R $end
+ $var wire 1 > _and1_T_3 $end
+ $var wire 6 ? condSide $end
+ $var wire 1 @ io_INT $end
+ $var wire 1 A _and2_T_3 $end
+ $var wire 1 B reset $end
+ $var wire 5 C io_IR15_11 $end
+ $var wire 1 D io_ACV $end
+ $var wire 1 E io_cFeed_IRD $end
+ $var wire 1 F io_PSR15 $end
+ $var wire 1 G _and1_T_2 $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0%
+0;
+0<
+b000000 )
+b000000 ?
+0=
+0>
+06
+0!
+b00000 C
+b000000 9
+07
+0"
+b000000 :
+08
+0#
+b000 '
+02
+03
+04
+05
+0-
+0.
+0D
+0/
+0E
+00
+0(
+0F
+01
+0G
+b000000 ,
+0*
+0@
+0+
+0A
+0$
+0B
+b0000 &
+$end
+#0
+1B
+1%
+11
+12
+1+
+#1
+16
+#6
+0B
+0-
+1%
+0D
+b000 '
+06
+b000000 )
+00
+b000000 ?
+0"
+0@
+0G
+12
+0*
+1+
+b000000 :
+b000000 ,
+#11
+16
+#16
+06

@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.DataPathTester, org.scalatest.tools.Framework$$anon$1@1bdad139, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDataPathTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mData Path[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should init PC at the provided reset vector[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should load IR correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 34 seconds, 628 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 2, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.DataPathTester[0m

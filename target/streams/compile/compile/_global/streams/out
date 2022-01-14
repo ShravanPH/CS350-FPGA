@@ -1,0 +1,12 @@
+[0m[[0m[31merror[0m] [0m[0m/home/vagrant/iit3503-starter/src/main/scala/iit3503/DataPath.scala:160:53: not enough arguments for method apply: (a: chisel3.UInt, len: Int)chisel3.UInt in object ZeroExt.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter len.[0m
+[0m[[0m[31merror[0m] [0m[0m  MARMUX := Mux(ctrl.MARMUX, addrCalc, ZeroExt.apply(IR(7,0)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/vagrant/iit3503-starter/src/main/scala/iit3503/DataPath.scala:181:3: not found: value SR2MMUX[0m
+[0m[[0m[31merror[0m] [0m[0m  SR2MMUX := Mux(IR(5), SignExt.apply(IR(4,0)), regs.io.sr2Out) [0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/vagrant/iit3503-starter/src/main/scala/iit3503/DataPath.scala:181:38: not enough arguments for method apply: (a: chisel3.UInt, len: Int)chisel3.UInt in object SignExt.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter len.[0m
+[0m[[0m[31merror[0m] [0m[0m  SR2MMUX := Mux(IR(5), SignExt.apply(IR(4,0)), regs.io.sr2Out) [0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

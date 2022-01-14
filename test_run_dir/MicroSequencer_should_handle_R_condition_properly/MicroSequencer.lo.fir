@@ -1,0 +1,72 @@
+circuit MicroSequencer :
+  module MicroSequencer :
+    input clock : Clock
+    input reset : UInt<1>
+    input io_cFeed_IRD : UInt<1>
+    input io_cFeed_COND : UInt<3>
+    input io_cFeed_J : UInt<6>
+    input io_R : UInt<1>
+    input io_BEN : UInt<1>
+    input io_PSR15 : UInt<1>
+    input io_INT : UInt<1>
+    input io_ACV : UInt<1>
+    input io_IR15_11 : UInt<5>
+    output io_ctrlAddr : UInt<6>
+
+    node io_ctrlAddr_lo = bits(io_IR15_11, 4, 1) @[MicroSequencer.scala 38:46]
+    node _io_ctrlAddr_T = cat(UInt<2>("h0"), io_ctrlAddr_lo) @[Cat.scala 30:58]
+    node _and1_T = bits(io_cFeed_COND, 2, 2) @[MicroSequencer.scala 42:27]
+    node _and1_T_1 = bits(io_cFeed_COND, 1, 1) @[MicroSequencer.scala 43:27]
+    node _and1_T_2 = and(_and1_T, _and1_T_1) @[MicroSequencer.scala 42:31]
+    node _and1_T_3 = bits(io_cFeed_COND, 0, 0) @[MicroSequencer.scala 44:27]
+    node _and1_T_4 = not(_and1_T_3) @[MicroSequencer.scala 44:13]
+    node _and1_T_5 = and(_and1_T_2, _and1_T_4) @[MicroSequencer.scala 43:31]
+    node and1 = and(_and1_T_5, io_ACV) @[MicroSequencer.scala 44:31]
+    node _and2_T = bits(io_cFeed_COND, 2, 2) @[MicroSequencer.scala 48:27]
+    node _and2_T_1 = bits(io_cFeed_COND, 1, 1) @[MicroSequencer.scala 49:27]
+    node _and2_T_2 = not(_and2_T_1) @[MicroSequencer.scala 49:13]
+    node _and2_T_3 = and(_and2_T, _and2_T_2) @[MicroSequencer.scala 48:31]
+    node _and2_T_4 = bits(io_cFeed_COND, 0, 0) @[MicroSequencer.scala 50:27]
+    node _and2_T_5 = and(_and2_T_3, _and2_T_4) @[MicroSequencer.scala 49:31]
+    node and2 = and(_and2_T_5, io_INT) @[MicroSequencer.scala 50:31]
+    node x_hi_hi = cat(and1, and2) @[Cat.scala 30:58]
+    node _and3_T = bits(io_cFeed_COND, 2, 2) @[MicroSequencer.scala 54:27]
+    node _and3_T_1 = bits(io_cFeed_COND, 1, 1) @[MicroSequencer.scala 55:27]
+    node _and3_T_2 = not(_and3_T_1) @[MicroSequencer.scala 55:13]
+    node _and3_T_3 = and(_and3_T, _and3_T_2) @[MicroSequencer.scala 54:31]
+    node _and3_T_4 = bits(io_cFeed_COND, 0, 0) @[MicroSequencer.scala 56:27]
+    node _and3_T_5 = not(_and3_T_4) @[MicroSequencer.scala 56:13]
+    node _and3_T_6 = and(_and3_T_3, _and3_T_5) @[MicroSequencer.scala 55:31]
+    node and3 = and(_and3_T_6, io_PSR15) @[MicroSequencer.scala 56:31]
+    node x_hi = cat(x_hi_hi, and3) @[Cat.scala 30:58]
+    node _and4_T = bits(io_cFeed_COND, 2, 2) @[MicroSequencer.scala 61:28]
+    node _and4_T_1 = not(_and4_T) @[MicroSequencer.scala 61:14]
+    node _and4_T_2 = bits(io_cFeed_COND, 1, 1) @[MicroSequencer.scala 62:27]
+    node _and4_T_3 = and(_and4_T_1, _and4_T_2) @[MicroSequencer.scala 61:32]
+    node _and4_T_4 = bits(io_cFeed_COND, 0, 0) @[MicroSequencer.scala 63:27]
+    node _and4_T_5 = not(_and4_T_4) @[MicroSequencer.scala 63:13]
+    node _and4_T_6 = and(_and4_T_3, _and4_T_5) @[MicroSequencer.scala 62:31]
+    node and4 = and(_and4_T_6, io_BEN) @[MicroSequencer.scala 63:31]
+    node _and5_T = bits(io_cFeed_COND, 2, 2) @[MicroSequencer.scala 67:28]
+    node _and5_T_1 = not(_and5_T) @[MicroSequencer.scala 67:14]
+    node _and5_T_2 = bits(io_cFeed_COND, 1, 1) @[MicroSequencer.scala 68:28]
+    node _and5_T_3 = not(_and5_T_2) @[MicroSequencer.scala 68:14]
+    node _and5_T_4 = and(_and5_T_1, _and5_T_3) @[MicroSequencer.scala 67:32]
+    node _and5_T_5 = bits(io_cFeed_COND, 0, 0) @[MicroSequencer.scala 69:28]
+    node _and5_T_6 = and(_and5_T_4, _and5_T_5) @[MicroSequencer.scala 68:32]
+    node and5 = and(_and5_T_6, io_R) @[MicroSequencer.scala 69:32]
+    node x_lo_hi = cat(and4, and5) @[Cat.scala 30:58]
+    node _and6_T = bits(io_cFeed_COND, 2, 2) @[MicroSequencer.scala 73:28]
+    node _and6_T_1 = not(_and6_T) @[MicroSequencer.scala 73:14]
+    node _and6_T_2 = bits(io_cFeed_COND, 1, 1) @[MicroSequencer.scala 74:28]
+    node _and6_T_3 = and(_and6_T_1, _and6_T_2) @[MicroSequencer.scala 73:32]
+    node _and6_T_4 = bits(io_cFeed_COND, 0, 0) @[MicroSequencer.scala 75:28]
+    node _and6_T_5 = and(_and6_T_3, _and6_T_4) @[MicroSequencer.scala 74:32]
+    node _and6_T_6 = bits(io_IR15_11, 0, 0) @[MicroSequencer.scala 76:25]
+    node and6 = and(_and6_T_5, _and6_T_6) @[MicroSequencer.scala 75:32]
+    node x_lo = cat(x_lo_hi, and6) @[Cat.scala 30:58]
+    node x = cat(x_hi, x_lo) @[Cat.scala 30:58]
+    node _condSide_T = or(x, io_cFeed_J) @[MicroSequencer.scala 81:17]
+    node condSide = _condSide_T @[MicroSequencer.scala 33:22 MicroSequencer.scala 81:12]
+    node _io_ctrlAddr_T_1 = mux(io_cFeed_IRD, _io_ctrlAddr_T, condSide) @[MicroSequencer.scala 37:21]
+    io_ctrlAddr <= _io_ctrlAddr_T_1 @[MicroSequencer.scala 37:15]

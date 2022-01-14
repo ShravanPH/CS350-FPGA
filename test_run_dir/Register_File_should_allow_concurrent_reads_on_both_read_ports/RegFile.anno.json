@@ -1,0 +1,30 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/Register_File_should_allow_concurrent_reads_on_both_read_ports/RegFile.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~RegFile|RegFile>io_sr2Out",
+    "sources":[
+      "~RegFile|RegFile>io_wEn",
+      "~RegFile|RegFile>io_sr2Sel"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~RegFile|RegFile>io_sr1Out",
+    "sources":[
+      "~RegFile|RegFile>io_wEn",
+      "~RegFile|RegFile>io_sr1Sel"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/Register_File_should_allow_concurrent_reads_on_both_read_ports"
+  }
+]

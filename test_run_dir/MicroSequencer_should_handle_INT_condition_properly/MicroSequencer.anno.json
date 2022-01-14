@@ -1,0 +1,29 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/MicroSequencer_should_handle_INT_condition_properly/MicroSequencer.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~MicroSequencer|MicroSequencer>io_ctrlAddr",
+    "sources":[
+      "~MicroSequencer|MicroSequencer>io_cFeed_IRD",
+      "~MicroSequencer|MicroSequencer>io_IR15_11",
+      "~MicroSequencer|MicroSequencer>io_cFeed_J",
+      "~MicroSequencer|MicroSequencer>io_PSR15",
+      "~MicroSequencer|MicroSequencer>io_ACV",
+      "~MicroSequencer|MicroSequencer>io_INT",
+      "~MicroSequencer|MicroSequencer>io_BEN",
+      "~MicroSequencer|MicroSequencer>io_R",
+      "~MicroSequencer|MicroSequencer>io_cFeed_COND"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/MicroSequencer_should_handle_INT_condition_properly"
+  }
+]

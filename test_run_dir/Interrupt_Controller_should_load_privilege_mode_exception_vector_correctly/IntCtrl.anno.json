@@ -1,0 +1,14 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/Interrupt_Controller_should_load_privilege_mode_exception_vector_correctly/IntCtrl.lo.fir"
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/Interrupt_Controller_should_load_privilege_mode_exception_vector_correctly"
+  }
+]

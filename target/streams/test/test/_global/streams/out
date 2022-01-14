@@ -1,0 +1,92 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.ControlStoreTester, org.scalatest.tools.Framework$$anon$1@4c374305, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mControlStoreTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mControl Store[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle an untaken branch correctly[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.DataPathTester, org.scalatest.tools.Framework$$anon$1@4c374305, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDataPathTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mData Path[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should init PC at the provided reset vector[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should load IR correctly[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.ALUTester, org.scalatest.tools.Framework$$anon$1@4c374305, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mALUTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mALU[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should ADD properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should wrap around on overflow addition[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should compute AND properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should negate (NOT) properly on A input[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should PASS A correctly[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.MemCtrlTester, org.scalatest.tools.Framework$$anon$1@4c374305, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMemCtrlTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMemory Controller[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should load MAR correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should load MDR correctly[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.ControlTester, org.scalatest.tools.Framework$$anon$1@4c374305, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mControlTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mControl Unit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should start in IFETCH state (18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through unexceptional IFETCH sequence properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should initiate the INT sequence properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should initiate the ACV sequence properly in an IFETCH[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should actually wait for memory in an IFETCH[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through ADD states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through AND states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through NOT states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through LEA states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through LD states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through LDR states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through LDI states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through STI states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through STR states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through ST states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through JSR states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through JSRR states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through JMP states properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through BR states properly when branch not taken[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through BR states properly when branch taken[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle ACV properly on an LD[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle ACV properly on LDI indirect access[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through undefined opcode states properly in supervisor mode[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through undefined opcode states properly in user mode[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should respect the old gods and the new[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise an exception for RTI in user mode[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through RTI states properly in supervisor mode[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through RTI states properly in supervisor mode when the INT happened in usermode[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through TRAP states properly in usermode[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should go through TRAP states properly in supervisor mode[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.IntCtrlTester, org.scalatest.tools.Framework$$anon$1@4c374305, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mIntCtrlTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInterrupt Controller[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept a device-provided interrupt vector[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should load a TRAP vector from the bus[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should load ACV vector correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should load UD vector correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should load privilege mode exception vector correctly[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.RegFileTester, org.scalatest.tools.Framework$$anon$1@4c374305, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRegFileTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRegister File[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should read and write regs correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow concurrent reads on both read ports[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(iit3503.MicroSeqTester, org.scalatest.tools.Framework$$anon$1@4c374305, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMicroSeqTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMicroSequencer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should give back {00 ++ IR[15..12]} when IRD ctrl line is low[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle ACV condition properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle INT condition properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle PSR[15] condition properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle BEN condition properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle R condition properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle IR[11] condition properly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 11 minutes, 55 seconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 54[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 8, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 54, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.MicroSeqTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.ALUTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.ControlStoreTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.RegFileTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.IntCtrlTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.MemCtrlTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.DataPathTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	iit3503.ControlTester[0m

@@ -1,0 +1,642 @@
+$date
+2021-05-05T08:39+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module DataPath $end
+ $var wire 16 ! addrCalc $end
+ $var wire 9 # ADDR2MUX_lo_1 $end
+ $var wire 1 $ io_bEn $end
+ $var wire 16 % io_debugR4 $end
+ $var wire 1 ' io_ctrlSigs_LDMDR $end
+ $var wire 16 ) _ADDR2MUX_T_7 $end
+ $var wire 17 * _SPMUX_T_2 $end
+ $var wire 1 , _BEN_T_4 $end
+ $var wire 17 - _addrCalc_T $end
+ $var wire 1 / io_ctrlSigs_GateSP $end
+ $var wire 2 0 io_ctrlSigs_SR1MUX $end
+ $var wire 1 2 _GEN_2 $end
+ $var wire 16 5 io_debugR7 $end
+ $var wire 1 6 BEN $end
+ $var wire 1 7 _T $end
+ $var wire 1 8 _newP_T $end
+ $var wire 1 9 _PCMUX_T_8 $end
+ $var wire 1 ; io_ctrlSigs_PSRMUX $end
+ $var wire 16 = _SPMUX_T_5 $end
+ $var wire 1 ? _BEN_T_7 $end
+ $var wire 1 @ io_ctrlSigs_MIOEN $end
+ $var wire 1 B PRIVMUX $end
+ $var wire 3 D _SR1MUX_T_4 $end
+ $var wire 1 E io_irq $end
+ $var wire 2 F io_ctrlSigs_ADDR2MUX $end
+ $var wire 8 H bus_io_inputs_1_lo $end
+ $var wire 1 I _BEN_T_1 $end
+ $var wire 16 J _GEN_5 $end
+ $var wire 1 K io_ctrlSigs_LDMAR $end
+ $var wire 16 L PC $end
+ $var wire 3 M _PRIOMUX_T $end
+ $var wire 5 N ADDR2MUX_hi_4 $end
+ $var wire 1 O P $end
+ $var wire 1 P io_ctrlSigs_LDIR $end
+ $var wire 1 Q io_ctrlSigs_LDACV $end
+ $var wire 16 R _ADDR2MUX_T_11 $end
+ $var wire 1 T _SR1MUX_T_7 $end
+ $var wire 1 V newZ $end
+ $var wire 3 Y _CCMUX_T $end
+ $var wire 1 Z ADDR2MUX_signBit $end
+ $var wire 1 \ io_psr15 $end
+ $var wire 4 _ _busOr_T_2 $end
+ $var wire 1 ` _GEN_8 $end
+ $var wire 16 a _PCMUX_T_5 $end
+ $var wire 16 c io_mdrVal $end
+ $var wire 16 g io_debugR6 $end
+ $var wire 16 i io_debugIR $end
+ $var wire 16 k ADDR2MUX $end
+ $var wire 1 l io_ctrlSigs_LDCC $end
+ $var wire 16 n _ADDR2MUX_T_9 $end
+ $var wire 11 q SR2MUX_hi $end
+ $var wire 1 r newN $end
+ $var wire 1 s _SPMUX_T_4 $end
+ $var wire 1 u _SR2MUX_T $end
+ $var wire 1 v io_ctrlSigs_GatePSR $end
+ $var wire 1 x io_devIntEnable $end
+ $var wire 16 y _SPMUX_T_7 $end
+ $var wire 1 z ADDR2MUX_signBit_2 $end
+ $var wire 16 { io_debugR0 $end
+ $var wire 1 | _DRMUX_T_4 $end
+ $var wire 1 "! io_ctrlSigs_LDSavedSSP $end
+ $var wire 16 "# io_debugPSR $end
+ $var wire 7 "$ _busOr_T $end
+ $var wire 1 "% io_ctrlSigs_GatePCm1 $end
+ $var wire 16 "& _ADDR2MUX_T_3 $end
+ $var wire 1 ") io_n $end
+ $var wire 3 "* PSR_priority $end
+ $var wire 1 ", io_z $end
+ $var wire 1 "- _GEN_7 $end
+ $var wire 16 ". io_debugR3 $end
+ $var wire 1 "0 io_ctrlSigs_TableMUX $end
+ $var wire 6 "1 ADDR2MUX_lo $end
+ $var wire 1 "2 _BEN_T_3 $end
+ $var wire 17 "3 _PCMUX_T $end
+ $var wire 16 "4 _SPMUX_T_1 $end
+ $var wire 16 "5 PCMUX $end
+ $var wire 3 "6 PSR_cc $end
+ $var wire 1 "8 busOr $end
+ $var wire 1 "; bus $end
+ $var wire 8 "< MARMUX_lo $end
+ $var wire 1 "= _BEN_T $end
+ $var wire 16 "@ _SR2MUX_T_2 $end
+ $var wire 1 "B _SR1MUX_T_3 $end
+ $var wire 16 "D _PCMUX_T_7 $end
+ $var wire 1 "E _BEN_T_6 $end
+ $var wire 1 "F io_ctrlSigs_GateMARMUX $end
+ $var wire 1 "H SR2MUX_signBit $end
+ $var wire 4 "I bus_io_inputSel_hi $end
+ $var wire 16 "K _GEN_1 $end
+ $var wire 1 "M io_ctrlSigs_GatePC $end
+ $var wire 2 "P io_ctrlSigs_PCMUX $end
+ $var wire 1 "R io_ctrlSigs_SetPriv $end
+ $var wire 1 "S newP $end
+ $var wire 2 "T io_ctrlSigs_SPMUX $end
+ $var wire 16 "V _PCMUX_T_1 $end
+ $var wire 3 "W _SR1MUX_T_6 $end
+ $var wire 1 "X _ACV_T $end
+ $var wire 1 "Y _ADDR2MUX_T_10 $end
+ $var wire 3 "Z _GEN_4 $end
+ $var wire 17 "[ _bus_io_inputs_2_T $end
+ $var wire 2 "\ io_ctrlSigs_VectorMUX $end
+ $var wire 3 "] _DRMUX_T_3 $end
+ $var wire 7 "^ ADDR2MUX_hi_3 $end
+ $var wire 16 "_ io_ir $end
+ $var wire 1 "b io_ctrlSigs_LDPriv $end
+ $var wire 2 "c io_ctrlSigs_DRMUX $end
+ $var wire 16 "d io_intHandlerAddr $end
+ $var wire 1 "e aGbReg $end
+ $var wire 1 "h _busOr_T_1 $end
+ $var wire 1 "i _PCMUX_T_4 $end
+ $var wire 3 "l _DRMUX_T $end
+ $var wire 1 "m clock $end
+ $var wire 16 "n _ADDR2MUX_T_5 $end
+ $var wire 1 "o _DRMUX_T_6 $end
+ $var wire 3 "q PRIOMUX $end
+ $var wire 1 "t io_ctrlSigs_LDREG $end
+ $var wire 1 "v io_ctrlSigs_RW $end
+ $var wire 1 "w io_ctrlSigs_GateVector $end
+ $var wire 1 "x ACV $end
+ $var wire 1 "y io_ctrlSigs_GateMDR $end
+ $var wire 1 "z io_ctrlSigs_MARMUX $end
+ $var wire 16 "| io_debugR5 $end
+ $var wire 16 "} _SPMUX_T_3 $end
+ $var wire 1 "~ ALU $end
+ $var wire 8 #! bus_io_inputs_1_hi $end
+ $var wire 16 ## _MARMUX_T $end
+ $var wire 11 #$ ADDR2MUX_lo_2 $end
+ $var wire 1 #% io_ctrlSigs_LDVector $end
+ $var wire 1 #& regs $end
+ $var wire 1 #' _ADDR2MUX_T_8 $end
+ $var wire 1 #( io_ctrlSigs_LDPC $end
+ $var wire 1 #* io_ctrlSigs_ADDR1MUX $end
+ $var wire 1 #, _newZ_T $end
+ $var wire 1 #- _newP_T_1 $end
+ $var wire 3 #. io_intPriority $end
+ $var wire 1 #1 ADDR2MUX_signBit_1 $end
+ $var wire 1 #3 _SPMUX_T_6 $end
+ $var wire 16 #4 io_bus $end
+ $var wire 16 #6 SavedSSP $end
+ $var wire 10 #7 ADDR2MUX_hi_2 $end
+ $var wire 1 #8 N $end
+ $var wire 1 #9 _SR1MUX_T_5 $end
+ $var wire 1 #: Z $end
+ $var wire 16 #< ADDR1MUX $end
+ $var wire 16 #= io_debugR2 $end
+ $var wire 16 #> io_debugPC $end
+ $var wire 1 #@ _ADDR2MUX_T_12 $end
+ $var wire 1 #A _BEN_T_2 $end
+ $var wire 1 #B io_ctrlSigs_LDBEN $end
+ $var wire 1 #C io_p $end
+ $var wire 5 #D SR2MUX_lo $end
+ $var wire 1 #E io_ctrlSigs_LDSavedUSP $end
+ $var wire 16 #I _GEN_6 $end
+ $var wire 1 #J _busOr_T_3 $end
+ $var wire 16 #M IR $end
+ $var wire 16 #N _GEN_0 $end
+ $var wire 1 #P _BEN_T_5 $end
+ $var wire 1 #U _PCMUX_T_6 $end
+ $var wire 3 #V _SR1MUX_T_2 $end
+ $var wire 1 #W _GEN_9 $end
+ $var wire 1 #[ PSR_priv $end
+ $var wire 17 #\ _SPMUX_T $end
+ $var wire 1 #^ reset $end
+ $var wire 3 #` _GEN_3 $end
+ $var wire 1 #d _DRMUX_T_2 $end
+ $var wire 3 #e CCMUX $end
+ $var wire 1 #g io_ACV $end
+ $var wire 3 #i ccLogic $end
+ $var wire 16 #l io_resetVec $end
+ $var wire 1 #m _SPMUX_T_8 $end
+ $var wire 1 #n io_ctrlSigs_GateALU $end
+ $var wire 1 #o io_ctrlSigs_LDPriority $end
+ $var wire 16 #p io_debugR1 $end
+ $var wire 16 #q SavedUSP $end
+ $var wire 3 #r _DRMUX_T_5 $end
+ $var wire 2 #s io_ctrlSigs_ALUK $end
+ $var wire 4 #u bus_io_inputSel_lo $end
+  $scope module ALU $end
+   $var wire 16 3 _GEN_1 $end
+   $var wire 16 4 _io_out_T_3 $end
+   $var wire 2 > io_opSel $end
+   $var wire 1 p _T $end
+   $var wire 16 "A io_in_b $end
+   $var wire 16 "N _GEN_0 $end
+   $var wire 16 "O _io_out_T_2 $end
+   $var wire 17 "j _io_out_T $end
+   $var wire 16 #) io_out $end
+   $var wire 16 #R _io_out_T_1 $end
+   $var wire 16 #Y io_in_a $end
+   $var wire 16 #a _GEN_2 $end
+  $upscope $end
+  $scope module regs $end
+   $var wire 16 " _GEN_20 $end
+   $var wire 16 & regs_7 $end
+   $var wire 16 ( _GEN_2 $end
+   $var wire 16 + _GEN_29 $end
+   $var wire 16 . _GEN_14 $end
+   $var wire 16 < _GEN_17 $end
+   $var wire 16 A _GEN_5 $end
+   $var wire 16 W _GEN_11 $end
+   $var wire 16 X io_debugR6 $end
+   $var wire 16 ] regs_6 $end
+   $var wire 16 b io_debugR0 $end
+   $var wire 1 f clock $end
+   $var wire 16 j _GEN_4 $end
+   $var wire 16 m _GEN_22 $end
+   $var wire 16 o regs_0 $end
+   $var wire 16 t io_debugR3 $end
+   $var wire 16 w _GEN_25 $end
+   $var wire 16 } _GEN_7 $end
+   $var wire 16 ~ _GEN_31 $end
+   $var wire 16 "" io_sr2Out $end
+   $var wire 16 "' _GEN_10 $end
+   $var wire 16 "( _GEN_19 $end
+   $var wire 16 "+ regs_3 $end
+   $var wire 3 "/ io_sr2Sel $end
+   $var wire 16 "7 _GEN_13 $end
+   $var wire 16 "9 _GEN_1 $end
+   $var wire 16 ": _GEN_28 $end
+   $var wire 16 "? io_debugR2 $end
+   $var wire 16 "L io_drIn $end
+   $var wire 16 "` io_debugR5 $end
+   $var wire 16 "f _GEN_9 $end
+   $var wire 16 "p regs_5 $end
+   $var wire 1 "r reset $end
+   $var wire 16 "u _GEN_0 $end
+   $var wire 16 "{ _GEN_21 $end
+   $var wire 16 #" _GEN_3 $end
+   $var wire 16 #+ _GEN_24 $end
+   $var wire 16 #/ _GEN_30 $end
+   $var wire 16 #0 _GEN_6 $end
+   $var wire 16 #2 regs_2 $end
+   $var wire 16 #5 _GEN_18 $end
+   $var wire 16 #F _GEN_12 $end
+   $var wire 16 #G _GEN_27 $end
+   $var wire 16 #O io_debugR1 $end
+   $var wire 16 #T io_sr1Out $end
+   $var wire 1 #X io_wEn $end
+   $var wire 16 #_ regs_1 $end
+   $var wire 3 #b io_sr1Sel $end
+   $var wire 16 #c io_debugR4 $end
+   $var wire 16 #h regs_4 $end
+   $var wire 3 #j io_drSel $end
+   $var wire 16 #k _GEN_26 $end
+   $var wire 16 #t io_debugR7 $end
+  $upscope $end
+  $scope module bus $end
+   $var wire 16 1 io_inputs_7 $end
+   $var wire 8 : io_inputSel $end
+   $var wire 1 C _oneHotMux_T_3 $end
+   $var wire 16 G _oneHotMux_T_10 $end
+   $var wire 16 S io_inputs_1 $end
+   $var wire 1 U _oneHotMux_T_6 $end
+   $var wire 16 [ _oneHotMux_T_19 $end
+   $var wire 16 ^ _oneHotMux_T_13 $end
+   $var wire 16 d io_inputs_4 $end
+   $var wire 16 e _oneHotMux_T_9 $end
+   $var wire 16 h _oneHotMux_T_16 $end
+   $var wire 16 "> _oneHotMux_T_21 $end
+   $var wire 16 "C _oneHotMux_T_15 $end
+   $var wire 16 "G io_inputs_6 $end
+   $var wire 1 "J _oneHotMux_T_2 $end
+   $var wire 1 "Q _oneHotMux_T_5 $end
+   $var wire 16 "U _oneHotMux_T_18 $end
+   $var wire 16 "a io_inputs_0 $end
+   $var wire 16 "g _oneHotMux_T_12 $end
+   $var wire 16 "k _oneHotMux_T_8 $end
+   $var wire 16 "s io_inputs_3 $end
+   $var wire 16 #; io_inputs_2 $end
+   $var wire 16 #? io_output $end
+   $var wire 1 #H _oneHotMux_T_7 $end
+   $var wire 1 #K _oneHotMux_T $end
+   $var wire 1 #L _oneHotMux_T_1 $end
+   $var wire 16 #Q _oneHotMux_T_20 $end
+   $var wire 16 #S io_inputs_5 $end
+   $var wire 16 #Z _oneHotMux_T_14 $end
+   $var wire 16 #] _oneHotMux_T_17 $end
+   $var wire 1 #f _oneHotMux_T_4 $end
+   $var wire 16 #v _oneHotMux_T_11 $end
+  $upscope $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+b0000000000000000 t
+b00 >
+b0000000000000000 a
+b0000000000000000 #=
+0#1
+b0000000000000000 "?
+b00000000000 #$
+b000 #.
+0"v
+0#W
+b0000000000000000 "&
+b0000000 "$
+0"r
+b0000000000000000 4
+0/
+b00 0
+b0000000000000000 #a
+b0000000000000000 "k
+b0000000000000000 "N
+b0000000000000000 #/
+b0000000000000000 "9
+0z
+b0000000000000000 b
+0r
+0"Q
+0@
+b0000000000000000 "|
+b0000000000000000 "g
+b0000000000000000 #]
+b0000000000000000 "_
+b0000000000000000 #+
+b0000000000000000 "5
+b000000 "1
+b000 #V
+0p
+0#E
+b0000000000000000 X
+b0000000000000000 .
+0"2
+b000 Y
+b000 D
+0#^
+0l
+0#A
+0#,
+0O
+b0000000000000000 "
+b0000000000000000 #l
+b0000000000000000 "n
+b0000000000000000 #O
+b0000000000000000 "'
+0`
+b0000000000000000 3
+b0000000000000000 #h
+b0000000000000000 "U
+b0000000000000000 #6
+b00000000 :
+0?
+0#m
+0"o
+0#P
+b0000000000000000 c
+b0000 _
+0"=
+b0000000000000000 1
+b0000000000000000 #I
+b000 #r
+b000 #j
+0;
+b000 "W
+0#L
+0Z
+b0000000000000000 "(
+b0000000000000000 #Z
+b0000000000000000 "G
+b00 "\
+b000 "6
+0#@
+09
+0"-
+b0000000000000000 #k
+0"~
+b0000000000000000 !
+b0000000000000000 #N
+b0000000000000000 "C
+b0000000 "^
+0|
+0"z
+0#[
+b0000000000000000 n
+b0000000000000000 <
+b0000000000000000 "7
+b0000000000000000 j
+b0000000000000000 #F
+0"Y
+0#:
+b0000000000000000 #)
+b0000000000000000 ^
+0"M
+b0000000000000000 A
+0'
+b0000000000000000 #Y
+b00000000000000000 "[
+b0000000000000000 #<
+b00000000000000000 -
+b00000000 H
+b00000000 #!
+b00000000000 q
+b0000000000000000 o
+0U
+0#*
+b0000 "I
+b0000000000000000 =
+b000 "q
+08
+0",
+b0000000000000000 ##
+b0000000000000000 ":
+0#o
+0"y
+b0000000000000000 m
+0#(
+0K
+b0000000000000000 ~
+b0000000000000000 i
+b000 "/
+0"X
+0#9
+0\
+b0000000000000000 L
+0";
+0"m
+b00000000000000000 #\
+b0000000000000000 "{
+b0000000000000000 "f
+b0000000000000000 #G
+b0000000000000000 #2
+b0000000000000000 "4
+b0000000000000000 ]
+0#-
+0C
+b0000000000000000 +
+0#H
+b0000000000000000 [
+0V
+0"J
+b0000000000000000 )
+b0000000000000000 "u
+b000 #b
+b000 "l
+0#n
+0"x
+b0000000000000000 W
+0"F
+0#'
+b0000000000000000 %
+0")
+b0000000000000000 #R
+b0000000000000000 #5
+b0000000000000000 ""
+0x
+b000 #`
+b00000 #D
+b0000000000000000 {
+0v
+0#K
+b0000000000000000 "D
+0"8
+b0000000000000000 #v
+b00 "c
+b000 #e
+06
+0#d
+b000 "Z
+b0000000000000000 w
+b0000000000000000 #S
+b00000000000000000 "j
+b0000000000000000 "@
+b0000000000000000 (
+b0000000000000000 "#
+b0000 #u
+b00000000 "<
+0"w
+0#X
+b0000000000000000 k
+0f
+0Q
+0"E
+0#&
+0I
+b0000000000000000 "p
+b0000000000000000 #Q
+b0000000000000000 #4
+b0000000000000000 ">
+b0000000000000000 g
+b0000000000000000 J
+0E
+b0000000000000000 5
+b00 F
+b0000000000000000 "d
+b0000000000000000 "O
+b0000000000000000 #0
+b000 M
+b000 "]
+0#g
+0u
+0"i
+0#J
+b0000000000000000 ".
+b00000000000000000 *
+0"e
+0T
+0"H
+07
+b0000000000000000 #q
+b0000000000000000 "s
+b0000000000000000 #T
+b0000000000000000 #?
+b0000000000000000 "V
+b0000000000000000 "A
+b0000000000000000 #"
+b00 #s
+0#B
+0P
+0#%
+b00000000000000000 "3
+b0000000000000000 #;
+b00 "T
+0"t
+0#U
+b0000000000000000 }
+b0000000000000000 h
+0#8
+0"B
+b0000000000000000 S
+0"%
+b0000000000000000 #c
+b00 "P
+0#f
+b0000000000000000 y
+b0000000000000000 d
+0"h
+0"S
+b000 "*
+b0000000000000000 G
+0B
+0"!
+b0000000000000000 #t
+b0000000000000000 #_
+b0000000000000000 "a
+b0000000000000000 "L
+b0000000000 #7
+b0000000000000000 &
+b0000000000000000 #p
+b0000000000000000 #>
+b0000000000000000 "+
+b000 #i
+02
+0"b
+0#C
+b000000000 #
+0"0
+b0000000000000000 R
+b0000000000000000 #M
+0s
+0"R
+0#3
+0,
+b00000 N
+0$
+b0000000000000000 "}
+b0000000000000000 e
+b0000000000000000 "`
+b0000000000000000 "K
+$end
+#0
+1#d
+b1111111111111111 4
+b00000000000000001 "3
+1"B
+b0000000000000001 "4
+1#^
+b1111111111111111 "}
+b0000000000000001 a
+b0000000000000001 =
+1p
+b0000000000000001 "5
+b1111111111111111 #;
+b0000000000000001 "a
+b0000000000000001 "D
+b0000000000000001 y
+1"i
+1#J
+18
+b11111111111111111 "[
+1V
+b11111111111111111 *
+b010 #i
+1"8
+b0000000000000001 "V
+1"r
+b00000000000000001 #\
+#1
+1"m
+1f
+1",
+b010 "6
+b0000000000000010 S
+b00000010 H
+1#:
+b0000000000000010 "#
+b1111110111111111 #I
+b1111110111111111 #q
+b010 "Z
+#6
+0"m
+0f
+b0000001111111111 #l
+1#^
+1"r
+#11
+1"m
+1f
+b00000001111111111 -
+b00000010000000000 "3
+b0000010000000000 "5
+b0000010000000000 a
+b0000001111111111 L
+b0000001111111111 "K
+b0000001111111110 #;
+b0000001111111111 !
+b0000010000000000 "D
+b0000001111111111 1
+b00000001111111110 "[
+b0000001111111111 #<
+b0000010000000000 "V
+b0000001111111111 #>
+#16
+0"m
+0f
+b0000000000000000 #l
+0#^
+0"r
+#21
+1"m
+1f
+#26
+0"m
